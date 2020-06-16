@@ -1,5 +1,5 @@
 
-import MobileNavigation from "./modules/MobileNav";
+import HomeImageSwitcher from "./modules/HomeSwitcher";
 import ScrollJs from "./modules/Scroll";
 import SwiperSection from "./modules/Swiper";
 import Map from "./modules/Map";
@@ -12,7 +12,7 @@ import PortfolioNavs from "./modules/Portfolio"
 
 
 
-let mobileNavigation = new MobileNavigation();
+let HomeImageSwitcher = new HomeImageSwitcher();
 let scrollJs = new ScrollJs();
 let swiper = new SwiperSection();
 let map = new Map();

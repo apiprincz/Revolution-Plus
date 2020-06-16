@@ -20,11 +20,14 @@
     }
 
     &--primary{
-        background: #FB5A1E;
-        border-radius: 200px;
-        padding: 17px 40px;
-        font-size: .7rem;
+        background: #FF0000;
+        border-radius: 140px;
+        padding: 10px 20px;
+       
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+        font:  18px Segoe UI Semibold;
+        letter-spacing: 0.42px;
+        color: #FFFFFF;        
     }
 
     &--large{
@@ -35,15 +38,17 @@
         transform: translateY(-10px);
     }
 
-    &--regular{
-        color: #FB5A1E;
-        font-size: .7rem;
-        padding: 15px 35px;
+    &-white{
+        color: #6E2169;
+      
+       
         background: #fff;
-        border-radius: 200px;
-
+        
+        border: 2px solid #6E2169;
+        
         
     }
+
 
     &--custom{
         font-weight: 700;

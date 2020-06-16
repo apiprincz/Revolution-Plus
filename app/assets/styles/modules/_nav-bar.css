@@ -7,6 +7,33 @@
     position: fixed;
     top: 0;
     left: 0;
+    &-search {
+        position: relative;
+
+    
+    & > input {
+        border: 2px solid #6E2169;
+        border-radius: 15px;
+        padding: 2px 10px;
+        font-size:12px;
+        margin-right:40px;
+    }
+
+   
+
+    & > img {
+        position: absolute;
+        right: 50px;
+        width: 7%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    }
+
+    &-home {
+        width: 75%;
+    }
 
     &__link{
         display: none;
@@ -19,7 +46,7 @@
     &--down{
         top: 0px;
         /* background: rgb(51, 50, 50); */
-        background: black;
+        /* background: black; */
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
     }
 
@@ -32,18 +59,16 @@
     
     }
 
-    &--port {
-        background: red;
-        height: 40px;
-        width: 100%;
-    }
+   
 
     &__logo-link{
         text-decoration: none;
+        margin-top: 30px;
+        display: block;
     }
 
     &__logo{
-        width: 60%;
+        width: 45%;
     }
 
     &__menu-icon{
@@ -52,9 +77,14 @@
         cursor: pointer;
     }
     &__right-content-container{
+        
         display: inline-flex;
         justify-content: flex-end;
         align-items: center;
+        background: rgba(110, 33, 105, 0.07);
+        border-radius: 20px;
+        padding: 0px 0px 0px 20px;
+        
     }
 
     &__menu-icon{
@@ -133,21 +163,23 @@ header > .nav-bar .new-bar{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
+        color: #000000;
         font-size: 1rem;
-        margin: 0 30px;
+        margin: 0 20px;
         text-decoration: none;
         font-weight: 500;
         white-space: nowrap;
+        padding: 10px 0px;
         vertical-align: center;
         transition: all .3s;
     }
 
     .nav-bar__link:link:hover, .nav-bar__link:visited:hover{
-        color: #FB5A1E;
+        color: #6E2169;
+        border-bottom: 3px solid #6E2169;
     }
     .nav-bar__link.nav-active{
-        color: #FB5A1E;
+        color: #6E2169;
     }
 
     

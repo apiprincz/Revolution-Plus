@@ -37,14 +37,5 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephendoyin/KJK.Africa-Website.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stephendoyin/KJK.Africa-Website/issues"
-  },
-  "homepage": "https://github.com/stephendoyin/KJK.Africa-Website#readme",
-  "description": ""
+  }
 }
