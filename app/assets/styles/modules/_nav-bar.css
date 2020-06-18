@@ -12,7 +12,7 @@
 
     
     & > input {
-        border: 2px solid #6E2169;
+        border: 1px solid #6E2169;
         border-radius: 15px;
         padding: 2px 10px;
         font-size:12px;
@@ -177,9 +177,13 @@ header > .nav-bar .new-bar{
     .nav-bar__link:link:hover, .nav-bar__link:visited:hover{
         color: #6E2169;
         border-bottom: 3px solid #6E2169;
+        
     }
     .nav-bar__link.nav-active{
         color: #6E2169;
+        border-bottom: 3px solid #6E2169;
+        
+
     }
 
     

@@ -1,11 +1,12 @@
 .home {
-    padding: 140px  40px 0px 40px;
+    padding: 140px  0px 0px 40px;
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
 
     &__container {
         width: 38%;
+        padding-top:40px;
 
         &-wide {
             width: 60%;
@@ -30,12 +31,12 @@
         }
         & > div {
             display: flex;
-            padding: 20px 0px;
+            padding: 10px 0px;
         }
     }
 
     &__text {
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
     &__button {
         justify-content: space-between;
@@ -62,7 +63,11 @@
         & > div {
             position: absolute;
             right:0;
-            width:76%;
+            width:70%;
+
+            &.home__box-wide {
+                width: 100%;
+            }
         }
         & img {
             width: 100%;
@@ -71,10 +76,40 @@
     &__box {
         /* display: none; */
         opacity: 0;
+        transition: all 2s ease-in;
+        transition-delay: 1s;
     }
     &__show {
         opacity: 1;
         transition: all 2s ease-in;
         transition-delay: 1s;
+
+        &-image {
+            opacity: 1;
+        }
     }
+    &__pagination {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > div {
+            margin: 0px 3px;
+            width: 10px;
+            height: 10px;
+            border-radius:50%;
+            border:1px solid #6E2169;
+            transition: all 2s ease-in;
+            transition-delay: 1s;
+        }
+        &-bg {
+            background:#6E2169 ;
+            transition: all 2s ease-in;
+
+            transition-delay: 1s;
+
+        }
+    }
+
 }

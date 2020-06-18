@@ -211,7 +211,9 @@ input{
     }
 }
 
-
+.body-container {
+    padding-top: 100px;
+}
 
 
 @media only screen and (min-width: 520px){

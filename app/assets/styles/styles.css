@@ -2,43 +2,19 @@
 @import 'swiper/css/swiper.css';
 @import 'normalize.css';
 @import 'global/_global.css';
-@import 'modules/_swiper.css';
+
 @import 'base/_base.css';
 @import 'modules/_header.css';
 @import 'modules/_nav-bar.css';
 @import 'modules/_btn.css';
 
-@import 'modules/_section.css';
+
 
 
 @import 'modules/_text-animation.css';
-@import 'modules/_mobile-nav.css';
-
-@import 'modules/_services.css';
-@import 'modules/_quote.css';
-@import 'modules/_quote-form.css';
-@import 'modules/_contact.css';
-
 @import 'modules/_home.css';
-@import 'modules/_process.css';
-@import 'modules/_team.css';
-@import 'modules/_contact-form.css';
-@import 'modules/_work.css';
-@import 'modules/_case.css';
-@import 'modules/_case-full.css';
-@import 'modules/_ch.css';
-@import 'modules/_who.css';
-
-@import 'modules/_solutions.css';
-@import 'modules/_glide.css';
-@import 'modules/_gallery.css';
-@import 'modules/_blog.css';
-@import 'modules/_recognition.css';
-@import 'modules/_geek.css';
-@import 'modules/_blog-story.css';
-@import 'modules/_redirect.css';
 @import 'modules/_header-case.css';
-@import 'modules/_client.css';
+@import 'modules/_about.css';
 
 
 
