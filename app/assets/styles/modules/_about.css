@@ -16,69 +16,57 @@
         display: flex;
         flex-direction: column;
         padding: 20px 40px;
+
+        &-hero {
+            display: flex;
+            align-items:center;
+        }
        
         & h1 {
-            font: 24px Segoe UI bold;
+            font: 20px Segoe UI bold;
+            white-space: nowrap;
 
-            &:after {
-                content:  '';
-                
-                /* vertical-align:50%; */
-                display: inline-block;
-                /* background-image:url('../../../assets/images/vision.svg'); */
-                background-size:100%;
-                width: 30px;
-                height: 25px;
-                margin-left:10px;
-                background-repeat:no-repeat;
-              
-            }
+           
         }
         & h3 {
             font: 16px Segoe UI Semibold;
+            white-space: nowrap;
             
         }
         & p {
-            font: 16px Segoe UI regular;
+            font: 14px Segoe UI regular;
 
         }
-
-        & > .vision{
-           
-            display: flex;
-            align-items: center;
         
-        &:after {
-            content:  '';
-            background-image:url('../../../assets/images/vision.svg');   
-        }
-    }
-        & > .mission{
-           
-            display: flex;
-            align-items: center;
-        
-        &:after {
-            content:  '';
-            background-image:url('../../../assets/images/mission.svg');   
-        }
-    }
-        & > .value{
-           
-            display: flex;
-            align-items: center;
-        
-        &:after {
-            content:  '';
-            background-image:url('../../../assets/images/value.svg');   
-            width:47px;
-        }
-    }
 
+     
     }
+    &-flex {
+        flex-direction: row;
+        width: 33%;
+        justify-content: space-around;
+        align-items: flex-end;
 
+        
+    }
     &-divider {
         padding: 10px 0px;
+    }
+    &-icon {
+        width:11%;
+        margin-left: 5px;
+
+        & img {
+            width: 100%;
+        }
+    }
+    &-img {
+        width: 40%;
+        padding-right: 10px;
+
+        & img {
+            width: 100%;
+        }
     }
     &-hero {
         background: white;
@@ -87,6 +75,11 @@
         & h2 {
             font: 24px Segoe UI bold;
             color:#6E2169;
+        }
+    }
+    &-wrapper {
+        & > div {
+        display: flex;
         }
     }
     &-hr{

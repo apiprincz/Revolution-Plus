@@ -14,7 +14,10 @@
 @import 'modules/_text-animation.css';
 @import 'modules/_home.css';
 @import 'modules/_header-case.css';
+
+@import 'modules/_contact-form.css';
 @import 'modules/_about.css';
+@import 'modules/_modal.css';
 
 
 

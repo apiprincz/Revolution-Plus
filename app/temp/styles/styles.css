@@ -2748,6 +2748,88 @@ App.js:39 Letter 10 is 147.7610626220703 */
 
 }
 
+.contact-form{
+    background: #FFF;
+    width:70%;
+    margin: 0 auto;
+
+}
+
+.contact-form__input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.7);
+        padding: 0 0 8px 0;
+        margin:0 auto;
+    }
+
+.contact-form--msg{
+        resize: none;
+    }
+
+.contact-form__inner-container{
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+.contact-form__inner-container .contact-form__label{
+            position: absolute;
+            top: -3px;
+            left: 0;
+            cursor: text;
+            font-size: 1.0rem;
+            color: #979797;
+            font-weight: 300;
+            transition: all .3s;
+        }
+
+.contact-form__inner-container .contact-form__label--keep{
+                top: -26px;
+                color: #6E2169;
+                font-size: 0.8rem;
+                font-weight: 500;
+            
+            }
+
+.contact-form__input:focus {
+        outline: none;
+        border-bottom: 1.5px solid #6E2169;
+    }
+
+.contact-form__input:focus~.contact-form__label{
+            top: -16px;
+            color: #6E2169;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+.contact-form__input-container{
+        padding: 16px 0px;
+    }
+
+.contact-form__title{
+        text-align: center;
+        color: #6E2169;
+        font-weight: 600;
+        padding-bottom: 16px;
+    }
+
+.contact-form__submit{
+        padding: 12px 30px;
+        border-radius: 60px;
+        color: #ffffff;
+        border: none;
+        background:#6E2169;
+        cursor: pointer;
+        margin-bottom: 5px;        
+    }
+
+@media only screen and (max-width:700px){
+    .contact-form__inner-container {
+        padding-bottom: 40px;
+    }
+}
+
 .about {
     padding-top: 100px;
     margin: 0 auto;
@@ -2768,74 +2850,64 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: flex;
         flex-direction: column;
         padding: 20px 40px;
+        
 
+     
     }
 
-.about-container h1 {
-            font: 24px Segoe UI bold;
+.about-container-hero {
+            display: flex;
+            align-items:center;
         }
 
-.about-container h1:after {
-                content:  '';
-                
-                /* vertical-align:50%; */
-                display: inline-block;
-                /* background-image:url('../../../assets/images/vision.svg'); */
-                background-size:100%;
-                width: 30px;
-                height: 25px;
-                margin-left:10px;
-                background-repeat:no-repeat;
-              
-            }
+.about-container h1 {
+            font: 20px Segoe UI bold;
+            white-space: nowrap;
+
+           
+        }
 
 .about-container h3 {
             font: 16px Segoe UI Semibold;
+            white-space: nowrap;
             
         }
 
 .about-container p {
-            font: 16px Segoe UI regular;
+            font: 14px Segoe UI regular;
 
         }
 
-.about-container > .vision{
-           
-            display: flex;
-            align-items: center;
+.about-flex {
+        flex-direction: row;
+        width: 33%;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        
     }
-
-.about-container > .vision:after {
-            content:  '';
-            background-image:url('../../../assets/images/vision.svg');   
-        }
-
-.about-container > .mission{
-           
-            display: flex;
-            align-items: center;
-    }
-
-.about-container > .mission:after {
-            content:  '';
-            background-image:url('../../../assets/images/mission.svg');   
-        }
-
-.about-container > .value{
-           
-            display: flex;
-            align-items: center;
-    }
-
-.about-container > .value:after {
-            content:  '';
-            background-image:url('../../../assets/images/value.svg');   
-            width:47px;
-        }
 
 .about-divider {
         padding: 10px 0px;
     }
+
+.about-icon {
+        width:11%;
+        margin-left: 5px;
+    }
+
+.about-icon img {
+            width: 100%;
+        }
+
+.about-img {
+        width: 40%;
+        padding-right: 10px;
+    }
+
+.about-img img {
+            width: 100%;
+        }
 
 .about-hero {
         background: white;
@@ -2847,6 +2919,10 @@ App.js:39 Letter 10 is 147.7610626220703 */
             color:#6E2169;
         }
 
+.about-wrapper > div {
+        display: flex;
+        }
+
 .about-hr{
         width: 95%;
         position: absolute;
@@ -2855,6 +2931,119 @@ App.js:39 Letter 10 is 147.7610626220703 */
         z-index: -1;
         /* background: red; */
     }
+
+.modal {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    /* height: 100%; */
+    background: #000000 0% 0% no-repeat padding-box;
+
+}
+
+.modal-show {
+    opacity: 0.85;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+        -webkit-animation-iteration-count:step;
+                animation-iteration-count:step;
+    transform-origin: top;
+    -webkit-animation-name: bounce-7;
+            animation-name: bounce-7;
+    -webkit-animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+
+    }
+
+.modal-hide {
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
+        -webkit-animation-iteration-count:step;
+                animation-iteration-count:step;
+    transform-origin: bottom;
+    -webkit-animation-name: bounce-up;
+            animation-name: bounce-up;
+    -webkit-animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);        
+    }
+
+.modal-content {
+        width: 36%;
+        margin:0 auto;
+        text-align:center;
+        color:#6E2169;
+        background:#FFFFFF;
+        padding:20px 0px 10px;
+        position: absolute;
+        top:50%;
+        right:50%;
+        transform:translate(50%, -50%);
+        border-radius:20px;
+
+    }
+
+.modal-content h1 {
+            font:16px Segoe UI Regular ;
+            letter-spacing: 0.2px;
+            line-height: 40px;
+        }
+
+.modal-content a {
+            color:#6E2169;
+        }
+
+@-webkit-keyframes bounce-7 {
+    0%   { transform:      translateY(-100vh
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-170px); }
+    
+    /* 35%  { transform:  translateY(0); } */
+    57%  { transform:     translateY(0px); }
+    64%  { transform:     translateY(0); }
+    100% { transform:    translateY(0); }
+}
+
+@keyframes bounce-7 {
+    0%   { transform:      translateY(-100vh
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-170px); }
+    
+    /* 35%  { transform:  translateY(0); } */
+    57%  { transform:     translateY(0px); }
+    64%  { transform:     translateY(0); }
+    100% { transform:    translateY(0); }
+}
+
+@-webkit-keyframes bounce-up {
+    0%   { transform:      translateY(0
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-100vh); }
+    50%  { transform:  translateY(-80vh); }
+    57%  { transform:     translateY(-100vh); }
+  80%  { transform:     translateY(-100vh); }
+    
+  
+    100% { transform:    translateY(-100vh); }
+}
+
+@keyframes bounce-up {
+    0%   { transform:      translateY(0
+    ); }
+    10%  { transform:   translateY(0); }
+    30%  { transform:   translateY(-100vh); }
+    50%  { transform:  translateY(-80vh); }
+    57%  { transform:     translateY(-100vh); }
+  80%  { transform:     translateY(-100vh); }
+    
+  
+    100% { transform:    translateY(-100vh); }
+}
 
 
 

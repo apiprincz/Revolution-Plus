@@ -8,7 +8,8 @@ class HomeImageSwitcher {
         this.counter = 0
 
         this.navHandler()
-        this.showImage()
+        
+        
 
     }
 

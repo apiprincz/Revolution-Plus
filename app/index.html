@@ -104,7 +104,7 @@
                 <h1>Let's Sell YOU a <span> HOME </span> not a <span> HOUSE </span></h1>
                 <div class="home__button">
                     
-                    <a href="" class="btn btn--primary  btn--hover">
+                    <a href="" class="btn btn--primary btn-subscribe btn--hover">
                         Subscribe
                     </a>
                     <a href="blog.html" class="btn btn--primary btn-white btn--hover">
@@ -163,11 +163,42 @@
             <div></div>
             <div></div>
         </div>
+        <div class="modal">
+            <div class="modal-content">
+                <h1>Get Amazing Promo Offer & Real Estate News Updates</h1>
+                <form action="" class="contact-form">
+                    
+                    <div class="contact-form__inner-container">
+                        <input type="text" id="contact-form__name" required autocomplete="off" class="contact-form__input">
+                        <label for="contact-form__name" class="contact-form__label">
+                            Full Name
+                        </label>
+                    </div>
+                    <div class="contact-form__inner-container">
+                        <input type="text" id="contact-form__email" required autocomplete="off" class="contact-form__input">
+                        <label for="contact-form__email" class="contact-form__label">
+                            Email
+                        </label>
+                    </div>
+                    
+
+                    <div class="contact-form__submit-container">
+                        <input type="submit" value="Submit" class="contact-form__submit">
+                    </div>
+
+                </form>
+                <a href="#">
+                    Terms & Conditions Apply
+                </a>
+
+            </div>
+        </div>
+
     </section>
 
     
 
-    <script>
+    <!-- <script>
         var scaleUp = {
             scale: 0,
             viewFactor: .5,
@@ -221,68 +252,15 @@
         ScrollReveal().reveal("btn--white", slideInUp);
 
 
-    </script>
-    <script>
-        
-        $(document).ready(function(){
-        $(".owllogos").owlCarousel({
-        autoplay:true,
-        autoplayTimeout:5000,
-        loop:true,
-        items: 9,
-        responsive:{
-            0:{
-                items:1
-            },
-            475:{
-                items:2
-            },
-            640:{
-                items:3
-            },
-            
-            900:{
-                items:4,
-            },
-            1100:{
-                items:5,
-            },
-            1500:{
-                items:6
-            }
-        }
-    });
+    </script> -->
     
-  });
-
- 
-
-    </script>
    
-    <script>
-      const config = {
-          type: "carousel",
-          perView : 5,
-          focusAt:"center",
-          breakpoints: {
-            800: {
-                perView: 3
-            },
-            600: {
-                perView: 2
-            },
-            480: {
-                perView: 1
-            }
-        }          
-      }
-      new Glide('.glide', config).mount()
-    </script>
+  
     <!-- <script>
         document.getElementById('myvideo').setAttribute('poster','linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/hero_img.jpg)');
     </script> -->
     <script src="jquery.min.js"></script>
-    <script src="assets/scripts/owl.carousel.min.js"></script>
+    <!-- <script src="assets/scripts/owl.carousel.min.js"></script> -->
 
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>
